@@ -1,0 +1,55 @@
+/* Basic styling for body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for navbar items */
+.navbar ul li a:hover {
+  background-color: #555;
+  color: #ff6347;
+}
+
+/* Content section */
+.content {
+  padding: 100px 20px;  /* Add padding to avoid overlap with the fixed navbar */
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+}
